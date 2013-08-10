@@ -1,0 +1,347 @@
+/* Degrade slider -further customization from degrade_slider/css/slider.css
+================================================== */
+#degradeSlider{
+	width: 960px;
+	height: 400px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 50px;
+}
+/* End Degrade slider
+================================================== */
+
+
+
+
+/* Horizontal carousel
+ * additional edit to the carousle can be found within elastislide.css
+================================================== */
+.horizontalCarouselItem{
+	width: 304px;
+	position: relative;
+	overflow: hidden;
+}
+.carouselItemCaption{
+	width: 304px;
+	height: 170px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.carouselTextCaption{
+	width: 100%;
+	top: 45%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.6em;
+	color: #1a1a1a;
+	font-weight: 300;
+	position: absolute;
+	text-decoration: none;
+	text-align: center;
+}
+/* End Horizontal carousel
+================================================== */
+
+
+/* iGallery
+================================================== */
+
+.iGalleryContainer{
+	position: relative;
+}
+.iThumb{
+	position: absolute;
+	width: 280px;
+	height: 180px;
+	overflow: hidden;
+}
+.iThumbHidden{
+	display: none;
+}
+.iGalleryLoading{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	opacity:0.3;
+	filter:alpha(opacity=30); /* For IE8 and earlier */		
+}
+#backButton{
+	text-align: center;
+	margin-top: 8px;
+}
+
+
+/* END iGallery
+================================================== */
+
+
+/* ISOTOPE-PORTFOLIO
+================================================== */
+
+.isotopeItem{
+	margin: 5px;
+	overflow: hidden;
+	float: left;
+}
+.imageItemType{
+	cursor: pointer;
+	padding: 0px;
+}
+.imageItemType img{
+	
+}
+
+.imageSize1{
+	width: 300px;
+	height: 230px;
+}
+.imageSize2{
+	width: 300px;
+	height: 400px;
+}
+.textSize1{
+	max-width: 300px;
+}
+.textSize2{
+	max-width: 600px;
+}
+
+.whiteHover{
+	width: 100%;
+	height: 100%;
+	background-color: #fff9e3;
+	opacity:0.45;
+	filter:alpha(opacity=55); /* For IE8 and earlier */		
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-decoration: none;
+	outline: none;	
+}
+.plusIco{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 10px;
+	background: url('../images/plus_icon.png');
+}
+.whiteCaption{
+	width: 100%;
+	height: 55px;	
+	position: absolute;
+	left: 0px;
+	bottom: 0px;		
+}
+.whiteCaptionBackground{
+	width: 100%;
+	height: 100%;	
+	background-color: #fff9e3;
+	opacity:0.45;
+	filter:alpha(opacity=55); /* For IE8 and earlier */
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+}
+.isotopeCaptionText{
+	position: relative;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.isotomeTextItem{
+	height: auto;	
+}
+.isotopeHeaderText{
+	width: 100%;
+	margin-bottom: 7px;
+	padding: 3px 3px;
+}
+.isotopeHeaderText p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.isotopeMenu{
+	list-style-type: none;
+	float: right;
+	margin-top: 10px;
+}
+.isotopeMenu li{
+	display: inline-block;
+	padding-top: 10px;
+}
+.isotopeMenu a{
+	background-repeat: no-repeat;
+	padding: 0px 20px;
+	color: #FFF; text-decoration: none; outline: none; font-family: 'Open Sans', sans-serif; font-weight: 300;
+	font-size: 13px;
+}
+.isotopeMenuSelected{
+	font-weight: bold;
+}
+
+.iconAll{
+	background: url('../images/icons/all.PNG');
+}
+.iconAll-Selected{
+	background: url('../images/icons/all_active.PNG');
+}
+.eye{
+	background: url('../images/icons/eye.PNG');
+}
+.eye-Selected{
+	background: url('../images/icons/eye_active.PNG');
+}
+.image{
+	background: url('../images/icons/image.PNG');
+}
+.image-Selected{
+	background: url('../images/icons/image_active.PNG');
+}
+.wheel{
+	background: url('../images/icons/wheel.PNG');
+}
+.wheel-Selected{
+	background: url('../images/icons/wheel_active.PNG');
+}
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+/**** END Isotope Filtering ****/
+
+/* END ISOTOPE-PORTFOLIO
+================================================== */
+
+
+/* Blog
+================================================== */
+.blogTitle{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	float: left;
+	margin-left: 0px;
+	margin-top: 4px;		
+}
+.blogTitle span{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.commentsSquare{
+	width: 20px;
+	height: 20px;
+	float: left;
+	font-size: 0.87em;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+	padding-left: 4px;
+	padding-top: 5px;
+	overflow: hidden;	
+}
+.blogCommensInfo{
+	position: relative;
+	left: 5px;
+	top: 5px;
+}
+.blogReadMore{
+	font-size: 0.87em;
+	top: 5px;
+	position: relative;
+}
+.blogRightBox{
+	margin-top: 9px;
+}
+.recentArticleTitle{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.12em;
+	font-weight: bold;
+	margin-bottom: 3px;		
+}
+.rssTitle{
+	font-weight: bold;	
+}
+.verticalSpaceBoxes{
+	margin-top: 30px;
+}
+
+.getSocial{
+	width: 100%;
+	height: 33px;
+	position: relative;
+	margin-top: 15px;	
+}
+.socialItems{
+	float: left;
+	position: relative;
+}
+.socialText{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	line-height: 33px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-top: -1px;
+	position: relative;
+}
+.smallYellowArrow{
+	margin-left: 6px;
+	width: 6px;
+	height: 33px;
+	background: url('../images/get_social_arrow.png');
+}
+.socialIco{
+	margin-left: 6px;
+	width: 20px;
+	height: 33px;	
+}
+.socialIco a{
+	text-decoration: none;
+	color: #FFF79A;	
+}
+
+/* End Blog
+================================================== */
+
+

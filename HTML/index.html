@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Spotless</title>    
+    
+    <!-- CSS Skeleton - Responsive Framework
+  ================================================== -->
+    <link rel="stylesheet" href="skeleton/base.css" />
+    <link rel="stylesheet" href="skeleton/skeleton.css" />
+    <link rel="stylesheet" href="skeleton/layout.css" />
+    
+    <!-- CSS Custom
+  ================================================== -->    
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link rel="stylesheet" type="text/css" href="css/eislideshow.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections.css" />    
+    
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />    
+       
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+
+    <!-- Fonts
+  ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css' />    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css' /> 
+
+
+    <!-- Plugin scripts
+  ================================================== -->
+    <script type="text/javascript" src="js/external/jquery/jquery_1_7.min.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jQueryRotateCompressed.2.2.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="js/external/jquery/jquery.tagcloud.js"></script>
+
+
+    <!-- HTML5 sound scripts
+  ================================================== -->
+    <!--[if gte IE 9 ]>
+        <script type="text/javascript" src="js/external/jquery/soundjs/SoundJS.js"></script>
+        <script type="text/javascript" src="js/external/jquery/soundjs/FlashPlugin.js"></script>
+        <script type="text/javascript" src="js/external/jquery/soundjs/HTMLAudioPlugin.js"></script>
+        <script type="text/javascript" src="js/external/jquery/soundjs/preloadjs-0.1.0.min.js"></script>  
+    <![endif]-->
+    <!--[if !IE]>-->
+        <script type="text/javascript" src="js/external/jquery/soundjs/SoundJS.js"></script>
+        <script type="text/javascript" src="js/external/jquery/soundjs/FlashPlugin.js"></script>
+        <script type="text/javascript" src="js/external/jquery/soundjs/HTMLAudioPlugin.js"></script>
+        <script type="text/javascript" src="js/external/jquery/soundjs/preloadjs-0.1.0.min.js"></script>  
+    <!--<![endif]-->  
+
+
+    <!-- PNG images scripts (for IE)
+  ================================================== -->
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="js/external/png_fix/supersleight-min.js"></script>
+    <![endif]-->
+
+
+    <!-- Website custom JS
+  ================================================== -->
+    <script type="text/javascript" src="js/com/sakurapixel/ui/background/ResizableBackground.js"></script>
+    <script type="text/javascript" src="js/com/sakurapixel/events/eventbus/EventBus.js"></script>
+    <script type="text/javascript" src="js/com/sakurapixel/events/genericevents.js"></script>
+    <script type="text/javascript" src="js/com/sakurapixel/jqueryajax/JQueryAjax.js"></script>
+    <script type="text/javascript" src="js/com/sakurapixel/ui/background/ResizableBackground.js"></script>
+    <script type="text/javascript" src="js/com/sakurapixel/lightbox/PhotoShootLightbox.js"></script>
+    <script type="text/javascript" src="js/com/sakurapixel/utils/utils.js"></script>
+    <script type="text/javascript" src="js/PagesUtils.js"></script>
+    <script type="text/javascript" src="js/IsotopePortfolio.js"></script>
+    <script type="text/javascript" src="js/Features.js"></script>
+    <script type="text/javascript" src="js/IGallery.js"></script>
+    <script type="text/javascript" src="js/ContactSection.js"></script>
+    <script type="text/javascript" src="js/SpotlessWebsite.js"></script>
+
+
+
+    <!-- Degrade Slider resources
+  ================================================== -->
+    <link rel="stylesheet" type="text/css" href="degrade_slider/css/slider.css" />
+    <script type="text/javascript" src="degrade_slider/js/external/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="degrade_slider/js/external/jquery/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="degrade_slider/js/DegradeSlider.js"></script>
+
+
+    <!-- Init website script
+  ================================================== -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+           var website = new SpotlessWebsite();
+           website.init();
+        });
+    </script>
+
+</head>
+
+<body>
+    <!--content wrapper-->
+    <div id="contentWrapper">
+
+        <!--main menu-->
+        <div id="mainMenu">
+            
+            <div id="menuContainer">
+                <div class="genericBackground backgroundColor01"></div>
+                
+                <!--menu items-->
+                <div id="menuItems">
+                    <ul>                                                
+                        <li><a href="#!Home.html">Home</a></li>
+                        <li><a href="#!About.html">About</a></li>
+                        <li><a href="#!igallery.html">iGallery</a></li>                                                                        
+                        <li><a href="#!Portfolio.html">Portfolio</a></li>
+                        <li><a href="#!SingleProject.html">Single project</a></li>
+                        <li><a href="#!Blog.html">Blog posts</a></li>
+                        <li><a href="#!BlogPost.html">Single article</a></li>                                                                                                                         
+                        <li><a href="#!Reel.html">Videos</a></li>                       
+                        <li><a href="http://themeforest.net/user/SakuraPixel" target="_blank">External link</a></li>
+                        <li><a href="#!Contact.html">Contact</a></li>                          
+                    </ul>
+                </div>
+                <!--/menu items-->
+            </div>
+            
+            <div id="menuOpenCloseBTN">
+                <div class="genericBackground backgroundColor01"></div>
+                <img src="images/show_hide_menu.png" alt="" />
+            </div>
+            
+            <div class="clear-fx"></div>            
+        </div>
+        <!--/main menu--> 
+
+
+    </div>
+    <!--/content wrapper-->
+    
+    
+</body>
+</html>

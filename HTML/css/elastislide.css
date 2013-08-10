@@ -1,0 +1,74 @@
+/* Elastislide Style */
+.es-carousel-wrapper{
+	background: none;
+	padding:10px 0px;
+	padding-top: 30px;
+	position:relative;
+}
+.es-carousel{
+	overflow:hidden;
+}
+.es-carousel ul{
+	display:none;
+}
+.es-carousel ul li{
+	width: 304px;
+	height:100%;
+	float:left;
+	display:block;
+}
+.es-carousel ul li a{
+	display:block;
+	border-style:none;
+	border-color:#222;
+}
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+}
+
+.es-nav-next{
+}
+.es-nav-prev{
+	
+}
+
+.shadow{
+	width: 46px;
+	height: 227px;
+	position: absolute;
+	top: 0px;
+}
+.shadowLeft{
+	background: url('../images/horizontal_carousel/left_shadow.png');
+	left: -46px;
+}
+.shadowRight{
+	background: url('../images/horizontal_carousel/right_shadow.png');
+	right: -46px;
+}
+
+/*carousel buttons background color*/
+.es-nav span{
+	position:absolute;
+	background: url('../images/horizontal_carousel/arrows.png');
+	top:50%;
+	left:-35px;	
+	width:34px;
+	height:34px;
+	margin-top:-13px;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.8;
+	background-color: #ec1c4d;
+}
+.es-nav span.es-nav-next{
+	right:-35px;
+	left:auto;
+	background-position:top right;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}

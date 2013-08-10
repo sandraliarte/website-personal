@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Spotless Theme Docs</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/png_fix/supersleight-min.js"></script>
+<![endif]-->
+<!--/Degrade slider JS libs-->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){       
+
+       $('pre').each(function(){
+           $(this).text($(this).html());
+       });
+    });
+</script>
+
+<!--analytics-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33300894-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--/analytics-->
+
+</head>
+
+<body>
+    <!--content wrapper-->
+    <div id="contentWrapper"> 
+        
+        <!--header-->
+        <div class="headerContainer">
+            <h1>Spotless Theme <a href="http://themeforest.net/user/SakuraPixel" target="_blank">by SakuraPixel</a></h1>
+        </div>
+        <!--header-->
+        
+        <!--menu-->
+        <div class="menuContainer">
+            <a class="menuItem" href="#about">About Spotless</a>
+            <a class="menuItem" href="#htmlstructure">HTML structure</a>
+            <a class="menuItem" href="#cssfiles">CSS files</a>
+            <a class="menuItem" href="#jsfiles">JavaScript files</a>
+            <a class="menuItem" href="#audio">Ambient sound</a>
+            <a class="menuItem" href="#fontused">Fonts used</a>
+            <a class="menuItem" href="#slider">Degrade Slider</a>
+            <a class="menuItem" href="#preloader">Website preloader</a>
+            <a class="menuItem" href="#credits">Credits</a>
+            <a class="menuItem" href="#support">Support</a>
+        </div>
+        <!--/menu-->
+        
+        
+        <!--content-->
+        <div class="contentContainer">
+            
+            <!--about-->
+            <p id="about" class="contentTitle">About Spotless Theme</p>
+            <p class="contentText">
+                Spotless - a carefully crafted theme that lets you display your work the clean, fancy way. 
+                Some of the theme's strong points are the awesomne iGallery, the sortable masonry gallery, 
+                the multipurpose slider. The responsive behaviour allows the content to easily adjust for any screen 
+                resolution in order to produce the optimal user experience for different use cases and enviroments, 
+                all built into one website. 
+           
+            </p>
+            <!--/about-->
+            
+            <div class="bigSpace"></div>
+            
+            
+            <!--html structure-->
+            <p id="htmlstructure" class="contentTitle">HTML structure</p>
+            <p class="contentText">
+                There are 9 sections types available for this template (home, about, iGallery, portfolio, single project, blog, single blog post, videos and contact), you can add/remove as many sections as you want. Please note that all pages must be stored under the 'pages/' folder.                
+            </p>
+            <p class="contentText">
+                <span class="noteFont">IMPORTANT! - please read this</span><br />
+                You can change most of the template's look and feel by editing css/main.css near (textColor01 to textColor03 and backgroundColor01 to backgroundColor04).
+                <br />Other settings/colors can be changed from css/sections.css.                            
+            </p>
+            <p class="contentText">
+                <span class="noteFont">IMPORTANT! - please read this</span><br />
+                You can an unlimited number of sections that are not present within the main website menu. <br />
+                <br />Example: You can add unlimited number of single project pages that are being accessed from the portfolio menu, same could happen with videos pages.                            
+            </p>
+            <p class="contentText">
+                <span class="noteFont">IMPORTANT! - please read this</span><br />
+                    The theme is Ajax powered, meaning its pages are being dynamically loaded making a page available as soon as it has been loaded. 
+                    Because of the this it needs to run on a web server in order to work. Please upload it on your server and edit it there. Alternatively you can install a web server on your local computer, please see <a href="http://www.wampserver.com/en/" target="_blank">Wamp (windows)</a> or <a href="http://www.mamp.info/en/index.html" target="_blank">Mamp (Mac OS)</a>.
+            </p>                                     
+                        
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--html structure-->
+            
+            
+             <div class="bigSpace"></div>
+             
+             
+            
+            <!--css files-->
+            <p id="cssfiles" class="contentTitle">CSS files</p>
+            <p class="contentText">
+                The template's custom css files are located under the css folder:<br />
+                <br />1. main.css - responsable with general colors/look and feel
+                <br />2. sections.css - responsable with sections styles                
+                <br />3. elastislide.css - responsable with styles for the horizontal carousel
+                <br />4. eislideshow.css - responsable with styles for the single project slider
+                <br />5. reset.css (resets the browser)
+                <br /><br />
+                Additional CSS files belong to Skeleton Framework (skeleton/) and to the Degrade Slider (degrade_slider/css).                             
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/css files-->
+            
+            
+             <div class="bigSpace"></div>
+
+
+            <!--js files-->
+            <p id="jsfiles" class="contentTitle">JavaScript files</p>
+            <p class="contentText">
+                The theme main javascript file is located at "js/SpotlessWebsite.js".
+                <br />
+                <br />Plugins/Libs used by Spotless Theme and the slider:
+                <br />
+                <br />- jQuery v1.7.1 (minified) - jQuery JavaScript Library, <a href="http://jquery.com/">http://jquery.com/</a>
+                <br />- jQuery UI v1.8.18 (minified) - jQuery user interface library, <a href="http://jqueryui.com/">http://jqueryui.com/</a>
+                <br />- jQuery Easing v1.3 - <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a>
+                <br />- jquery.mousewheel.js - <a href="http://brandonaaron.net/code/mousewheel/demos">http://brandonaaron.net/code/mousewheel/demos</a>
+                <br />- jquery.ui.touch-punch.min.js - <a href="http://touchpunch.furf.com/">http://touchpunch.furf.com/</a>                
+                <br />- jquery.tagcloud.js - <a href="https://github.com/addywaddy/jquery.tagcloud.js">Tag Cloud</a>                 
+                <br />- jquery.eislideshow.js - <a href="https://github.com/louisremi/jquery.smartresize.js">Eislideshow</a>
+                <br />- jquery.elastislide.js - <a href="http://tympanus.net/Development/Elastislide/">Elastislide</a>
+                <br />- jquery.isotope.min.js - <a href="http://isotope.metafizzy.co">Isotope</a>
+                <br />- Sound.js, Preload.js - <a href="http://createjs.com/">Create.js</a>                              
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/js files--> 
+            
+            
+            
+
+             <div class="bigSpace"></div>
+
+
+            <!--sound-->
+            <p id="audio" class="contentTitle">Template's sound</p>
+            <p class="contentText">
+                Spotless supports ambient sound/track that will loop continously. The template's audio files are located within the "sounds/" folder. 
+                <br />You can remove this feature by editing "SpotlessWebsite.js" <br /> 
+                and change te value of isWebsiteSound to false.<br />
+                You can change the volume by editing "soundVolume"<br />
+                You can change the track by editing "soundResource"<br /><br />                                        
+            </p>
+            <p class="contentText">
+                <span class="noteFont">IMPORTANT! - please read this</span><br />
+                Some of the browsers can play MP3 sond files, others can play OGG files, so you need to provide the same sound within two formats (.mp3 andd .ogg) - see sounds folder.                          
+            </p>              
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/sound-->             
+            
+            
+            
+            
+             <div class="bigSpace"></div>
+
+
+            <!--preloader-->
+            <p id="preloader" class="contentTitle">Template's preloader</p>
+            <p class="contentText">
+                The website's preloader is a GIF image, you can add any GIF image you want.<br />
+                If you would like to use the same preloader as we used but to change the color, you can generate one here: <a href="http://preloaders.net/">Preloaders.net</a>                                   
+            </p>          
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/preloader-->             
+            
+            
+            
+            
+             <div class="bigSpace"></div>
+             
+             
+            
+            <!--css files-->
+            <p id="fontused" class="contentTitle">Fonts used</p>
+            <p class="contentText">
+                <a href="http://www.google.com/webfonts/specimen/Open+Sans">Open Sans</a>
+                <br /><a href="http://www.google.com/webfonts/specimen/Quicksand">Quicksand</a>
+                <br /><br />
+                Using fonts within HTML:<br />
+                Fonts are being loaded using Google Fonts Web API. Ex: The following line will load Open Sans.
+                <br />
+                    <pre><link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css' /></pre>
+                <p class="contentText">
+                You can find extensive documentation about using google fonts here: <a href="https://developers.google.com/webfonts/docs/getting_started" target="_blank">Google Web Fonts</a>.
+                </p>                                
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/css files-->            
+                                       
+
+            
+            <div class="bigSpace"></div>
+            
+            
+            <!--slider-->
+            <p id="slider" class="contentTitle">Degrade Slider</p>
+            <p class="contentText">
+                Degrade slider is a multipurpose, fully customizable slider, with responsive behavior and all-in-one features.
+                It sports a 40+ options variation, the slider‘s appearance can be customized through its‘ 8 different shadows, 4 different corner style, 6 different control types, unlimited colors, shortcodes, captions style, fullscreen behavior, giving you the possibility of making literally hundreds of different sliders.
+                <br /><br />
+                The slider can be also used as a banner, can play video, can display captions wherever you want, can be used as advertising tool as well as display panel.
+                <br />You can find additional documentation about the slider within the downloaded files - silder_docs. 
+                <br /><br />
+                <a href="http://codecanyon.net/item/degrade-the-swiss-army-slider/full_screen_preview/2725332" target="_blank">More about Degrade Slider</a>                             
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/slider-->            
+            
+            
+            
+            <div class="bigSpace"></div>
+                      
+            
+            
+            <!--credits-->
+            <p id="credits" class="contentTitle">Credits</p>
+            <p class="contentText">
+                Preview Images ( <a href="http://publicdomainpictures.net" target="_blank">Fotolia.com</a> ). Please note that the preview images are not included within the download file.
+                <br />Images included within the download file ( <a href="http://publicdomainpictures.net" target="_blank">Publicdomainpictures.net</a> ).
+                <br />Social Media Balloon Icon Set by ( <a href="http://www.doublejdesign.co.uk/" target="_blank">Double-J Design</a> ).         
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/credits-->            
+ 
+            
+            <div class="bigSpace"></div>
+            
+    
+            
+            <!--support-->
+            <p id="support" class="contentTitle">Support</p>
+            <p class="contentText">
+                If you have any questions, please use our profile contact form on Envato ( <a href="http://themeforest.net/user/SakuraPixel" target="_blank">SakuraPixel</a> ). We will try to answer all questions within 24 hours.            
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/support-->            
+            
+            
+            
+            
+            
+        </div>
+        <!--/content-->
+        
+        <div class="clear-fx"></div>
+        
+    </div>
+    <!--/content wrapper-->
+</body>
+</html>

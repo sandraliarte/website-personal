@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Degrade The swiss-army-slider</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/png_fix/supersleight-min.js"></script>
+<![endif]-->
+<!--/Degrade slider JS libs-->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){       
+
+       $('pre').each(function(){
+           $(this).text($(this).html());
+       });
+    });
+</script>
+
+<!--analytics-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33300894-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--/analytics-->
+
+</head>
+
+<body>
+    <!--content wrapper-->
+    <div id="contentWrapper"> 
+        
+        <!--header-->
+        <div class="headerContainer">
+            <h1>Degrade The swiss-army-slider <a href="http://themeforest.net/user/SakuraPixel" target="_blank">by SakuraPixel</a></h1>
+        </div>
+        <!--header-->
+        
+        <!--menu-->
+        <div class="menuContainer">
+            <a class="menuItem" href="#about">About Degrade Slider</a>
+            <a class="menuItem" href="#basicusage">Basic usage</a>
+            <a class="menuItem" href="#htmlstructure">HTML structure</a>
+            <a class="menuItem" href="#slideroptions">Slider options</a>
+            <a class="menuItem" href="#captions">Captions</a>
+            <a class="menuItem" href="#shortcodes">Shortcodes</a>
+            <a class="menuItem" href="#api">API usage</a>
+            <a class="menuItem" href="#samples">Samples and showcases</a>
+            <a class="menuItem" href="#credits">Credits</a>
+            <a class="menuItem" href="#support">Support</a>
+        </div>
+        <!--/menu-->
+        
+        
+        <!--content-->
+        <div class="contentContainer">
+            
+            <!--about-->
+            <p id="about" class="contentTitle">About the slider</p>
+            <p class="contentText">
+                Degrade - the swiss-army-slider is a multipurpose, fully customizable slider, with responsive behavior and all-in-one features.
+                It sports a 40+ options variation, the slider‘s appearance can be customized through its‘ 8 different shadows, 4 different corner style, 6 different control types, unlimited colors, shortcodes, captions style, fullscreen behavior, giving you the possibility of making literally hundreds of different sliders.
+                <br /><br />
+                The slider can be also used as a banner, can play video, can display captions wherever you want, can be used as advertising tool as well as display panel.            
+            </p>
+            <!--/about-->
+            
+            <div class="bigSpace"></div>
+            
+            
+            <!--basic usage-->
+            <p id="basicusage" class="contentTitle">Basic usage</p>
+            <p class="contentText">
+                <span class="noteFont">NOTE!</span><br />
+                Degrades Slider is Ajax powered, meaning its slides' images are being dynamically loaded making a slide available as soon as its image has been loaded. 
+                <br /> Because of the this it needs to be on a web server in order to work. Please upload it on your server and edit it there. Alternatively you can install a web server on your local computer, please see <a href="http://www.wampserver.com/en/" target="_blank">Wamp (windows)</a> or <a href="http://www.mamp.info/en/index.html" target="_blank">Mamp (Mac OS)</a>.
+            </p>
+         
+            
+            <p class="contentText">
+                All the images, CSS and JavaScript files required for Degrade Slider can be found within the "degrade_slider" folder.
+               <br /><br />1. In order to use the slider you have to include the following files:
+            </p>
+            <pre>
+                    <link rel="stylesheet" type="text/css" href="degrade_slider/css/slider.css" />
+                    <script type="text/javascript" src="degrade_slider/js/external/jquery/jquery.min.js"></script>
+                    <script type="text/javascript" src="degrade_slider/js/external/jquery/jquery.easing.1.3.js"></script>
+                    <script type="text/javascript" src="degrade_slider/js/external/jquery/jquery-ui-1.8.21.custom.min.js"></script>
+                    <script type="text/javascript" src="degrade_slider/js/external/jquery/jquery.ui.touch-punch.min.js"></script>
+                    <script type="text/javascript" src="degrade_slider/js/DegradeSlider.js"></script>
+                    <!--[if lte IE 6]>
+                    <script type="text/javascript" src="degrade_slider/js/external/png_fix/supersleight-min.js"></script>
+                    <![endif]-->             
+            </pre>
+                
+            <p class="contentText">
+                2. Place the slider's HTML content to your page (Please see the samples that come within the download files)                
+                <br /><br /><span class="noteFont">NOTE!</span><br />
+                Every slider needs to have it's own ID (see samples that come with the download file). Within the samples files you will notice that we have named the ID "slider1" (you can name it as you want).
+                If you have multiple sliders instances within the same page you need to have different ID's for each.
+                <br />
+                <br />
+                Add the slider's size and position to your page css. You have to set the slider's position and size within your page CSS,                 
+                see example bellow:
+                <br />
+                <pre>
+                    #slider1{
+                        width: 961px;
+                        height: 434px;
+                        position: relative;
+                    }                   
+                </pre>                
+            </p>
+            <p class="contentText">    
+                3. Initialize the slider
+                <br />Add the following code within the head tags of your website (see samples that come with the download file).
+                <br />Basic slider usage (plase note the "slider1" ID passed to the slider's instance).
+            </p>
+                <pre>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            slider = new DegradeSlider("slider1");                                                        
+                        });
+                    </script>                    
+                </pre>
+             <p class="contentText">Initialize slider with options (<a href="#slideroptions">@see Slider options</a> for all available options)</p>
+                <pre>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                          slider = new DegradeSlider("slider1", {
+                               autoPlay: true,
+                               autoScale: true,
+                               slideAnimationType: "easeOutQuint",
+                               bottomCornersStyle: "CornerStyle04"
+                           });
+                        });
+                    </script>                    
+                </pre>
+                
+             <p class="contentText">Initialize multiple sliders</p>
+                <pre>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                          slider = new DegradeSlider("slider1");
+                          secondSlider = new DegradeSlider("slider2");
+                        });
+                    </script>                    
+                </pre>                                 
+            
+            <p class="contentText">
+                <span class="noteFont">NOTE!</span><br />
+                We recomend that the sizes of the slides's images to be the same dimension as the size of the slider.
+            </p>            
+            
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/basic usage-->            
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            
+            <!--html structure-->
+            <p id="htmlstructure" class="contentTitle">HTML structure</p>
+            <p class="contentText">
+                Please see one of the samples from within the download file.
+                <br />
+                Place all slides within the "degradeSlides" container:
+                <pre>
+                    <div class="degradeSlides">
+                        <div class="degradeSlide"></div>
+                        <div class="degradeSlide"></div>
+                    </div>
+                </pre>                                          
+            </p>
+            <p class="contentText">
+                Place the slide's images within the "degradeSlide" container:
+                <pre>
+                    <div class="degradeSlides">
+                        
+                        <div class="degradeSlide">
+                            <img class="degradeSlideImage" src="images/image01.jpg" />
+                        </div>
+                        
+                        <div class="degradeSlide">
+                            <img class="degradeSlideImage" src="images/image01.jpg" />
+                        </div>
+                        
+                    </div>
+                </pre>                                          
+            </p>
+            <p class="contentText">
+                Place the captions within the "degradeSlide" container. <a href="#captions">@See Captions</a> for a detailed explanation about caption's animation and effects. 
+                <pre>
+                    <div class="degradeSlides">
+                        
+                        <div class="degradeSlide">
+                            <img class="degradeSlideImage" src="images/image01.jpg" />
+                            <div class="captionItem">Hello1</div>
+                            <div class="captionItem">Hello2</div>
+                        </div>
+                        
+                        <div class="degradeSlide">
+                            <img class="degradeSlideImage" src="images/image01.jpg" />
+                            <div class="captionItem">Hello1</div>
+                        </div>
+                        
+                    </div>
+                </pre>                                          
+            </p>             
+                        
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--html structure-->        
+            
+                                    
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            
+            <!--slider options-->
+            <p id="slideroptions" class="contentTitle">Slider options</p>
+            <p class="contentText">
+                You can Initialize the slider with the following options.
+                <br /><br /><span class="noteFont">NOTE!</span><br />
+                <a href="http://hosted.zeh.com.br/tweener/docs/en-us/misc/transitions.html">@see Transition/Animation types</a>
+                <br />Animation's duration is expressed in miliseconds (1000 miliseconds = 1 second)                     
+            </p>
+            <pre>
+               slideAnimationType: "easeOutQuint",          //slider's animation/transition type               
+               slideAnimationDuration: 600,                 //slides default animation duration
+               enableTouchDragSlides: true,                 //enable/disable touch and drag slides
+               autoPlay: false,                             //autoplay slides
+               autoPlayInterval: 5000,                      //autoplay interval (5 seconds)
+               pauseAutoplayOnHover: true,                  //pause autoplay on hover
+               autoPlayStopAtEnd: true,                     //stop autoplay at the end (could be used for banner creation)
+               autoScale: true,                             //responsive behavior
+               showShadow: true,                            //show slider shadow
+               shadowType: 'ShadowType01',                  //shadow type (there are 8 shadow types available ShadowType01 ....to ...ShadowType08)
+               showBottomCorners: true,                     //show bottom corners
+               bottomCornersStyle: "CornerStyle01",         //corners style (there are 4 corner types available CornerStyle01 ....to ...CornerStyle04)
+               showCenterButtons: true,                     //show center navigation buttons
+               showCenterButtonsBackground: false,          //show center navigation button's background
+               centerButtonsAdjustPosition: 20,             //adjust center navigation buttons vertical position (ex: 20 or -20)
+               showCenterButtonsStyle: "Style01",           //center navigation button's style (there are two style available Style01 and Style02)
+               enableKeyboardNav: true,                     //enable/disable keyboard navigation
+               showSliderBackground: true,                  //enable/disable sliders's background         
+               sliderBackgroundColor: "#FFFFFF",            //sliders's background color
+               sliderBackgroundOpacity: .2,                 //sliders's background opacity
+               sliderShowBorder: true,                      //enable/disable sliders's border
+               sliderBorderColor: "#FFFFFF",                //sliders's border color
+               sliderShowInnerBorder: true,                 //enable/disable sliders's inner border
+               sliderInnerBorderColor: "#FFFFFF",           //sliders's inner border color
+               showLeftRightNav: true,                      //enable/disable sliders's arrows navigation
+               showLeftRightNavIsBackground: false,         //sliders's arrows navigation background
+               leftRightNavBackgroundColor: "#212121",      //sliders's arrows navigation background color
+               leftRightNavType: "Nav04",                   //sliders's arrows navigation type (there are 4 types available: Nav01 to Nav04)
+               leftNavAdjustPosition: 10,                   //adjust horizontal position of left navigation arrow
+               rightNavAdjustPosition: -10,                 //adjust horizontal position of right navigation arrow
+               showSliderPreloader: true,                   //enable/disable slider's preloader               
+               showDragCursor: false,                       //show drag cursor
+               enableFullScreen: true,                      //enable/disable native full screen (for browsers that supports full screen)
+               normalWidth: 800,                            //default slider width
+               normalHeight: 400                            //default slider height                        
+            </pre>            
+            
+            
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/slider options-->             
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            <!--captions-->
+            <p id="captions" class="contentTitle">Captions</p>
+            <p class="contentText">
+                Degrade Slider supports unlimited captions on each slide, you can add any HTML content within captions.
+                <br />
+                Each caption has predefined properties and animations which you can override from within HTML. See available properties below.
+                <br /><br /><span class="noteFont">NOTE!</span><br />
+                <a href="http://hosted.zeh.com.br/tweener/docs/en-us/misc/transitions.html">@see Transition/Animation types</a>
+                <br />Animation's duration is expressed in miliseconds (1000 miliseconds = 1 second)                                                        
+            </p>
+            <pre>
+                positionX:"0",                                  //caption position X
+                positionY:"0",                                  //caption position Y
+                animation:"None",                               //caption's animation cpuld be (None, SlideFromLeft, SlideFromRight, SlideFromTop, SlideFromBottom)
+                animationType:"easeOutQuint",                   //animation transition type (see NOTE above)
+                animationDuration: 500,                         //animation duration (see NOTE above)
+                delayAnimation:0,                               //delay animation start (see NOTE above)
+                isBackground: "false"                           //caption background
+                backgroundColor: "#212121",                     //caption background color
+                backgrondTransparency: .5,                      //caption background transparency
+                fullWidthVideo: "false"                         //caption full width video (see sample with video)
+            </pre>
+            
+            <p class="contentText">
+                Example of caption properties within HTML:                                                       
+            </p>
+            <pre>
+                       <div class="captionItem" data-animation="SlideFromLeft" data-isBackground="true" data-positionX="80" data-positionY="200">
+                           <p class="slideTitle">SHORTCODES</p>
+                       </div>                
+            </pre>            
+            
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/captions-->             
+            
+            
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            
+            <!--shortcodes-->
+            <p id="shortcodes" class="contentTitle">Shortcodes</p>
+            <p class="contentText">
+                Degrade Slider comes with builtin shortcodes. Shortcodes makes it easy to add different elements that you might need inside the slider.
+                <br />For example you need a red button with rounded corners, you simply add the following code within a caption:                               
+            </p>
+            <pre>
+                <a href="http://yourlink.com" class="degradeButton roundButton red">Button</a>
+            </pre>
+            
+            <p class="contentText">
+                Please see the shortcodes demo that comes with the download file.                               
+            </p>            
+            
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/shortcodes-->            
+            
+            
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            
+            
+            <!--api usage-->
+            <p id="api" class="contentTitle">Api usage</p>
+            <p class="contentText">
+                Degrade Slider provide an easy way to programmatically access some of its methods. The public methouds are:                                                           
+            </p>            
+            <pre>
+                getSliderWidth();       //returns the current width of the slider in pixels
+                getSliderHeight();      //returns the current height of the slider in pixels
+                getCurrentSlide();      //returns the current slide number
+                goToSlide(slideNo);     //go to a specific slide number (please note that first slide is slinde number 0)
+            </pre>            
+            <p class="contentText">
+                In order to add a button within a slide that triggers go to a specific slide you should:                                                       
+            </p>
+            <pre>
+                <a href="#" onclick="slider.goToSlide(2);" class="degradeButton roundButton red">Button</a>
+            </pre>             
+            
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/api usage-->             
+            
+            
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+                        
+            
+            
+            <!--samples-->
+            <p id="samples" class="contentTitle">Samples and showcases</p>
+            <p class="contentText">
+                 Degrade Slider comes with a few demos and showcases in order to reflect its best usage.
+                 <br />Included samples are: video_showcase, banner_showcase, shortcode_showcase, responsive.                                   
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/samples-->             
+            
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            
+            
+            <!--credits-->
+            <p id="credits" class="contentTitle">Credits</p>
+            <p class="contentText">
+                Preview Images ( <a href="http://publicdomainpictures.net" target="_blank">Fotolia.com</a> ). Please note that the preview images are not included within the download file.
+                <br />Images included within the download file ( <a href="http://publicdomainpictures.net" target="_blank">Publicdomainpictures.net</a> ).
+                <br />Social Media Balloon Icon Set by ( <a href="http://www.doublejdesign.co.uk/" target="_blank">Double-J Design</a> ).
+                <br />Used fonts within the PSD files:
+                <br /><a href="http://www.freefontsdb.com/detail/3584/Bernhard-Fashion-BT" target="_blank">Bernhard Fashion BT Free Font</a>
+                <br /><a href="http://www.google.com/webfonts/specimen/Open+Sans" target="_blank">OpenSans</a>
+                <br /><a href="http://www.google.com/webfonts/specimen/Open+Sans+Condensed" target="_blank">OpenSans Condensed</a>           
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/credits-->            
+            
+            
+            
+            
+            
+            <div class="bigSpace"></div>
+            
+            
+            
+            
+            
+            <!--support-->
+            <p id="support" class="contentTitle">Support</p>
+            <p class="contentText">
+                If you have any questions, please use our profile contact form on Envato ( <a href="http://themeforest.net/user/SakuraPixel" target="_blank">SakuraPixel</a> ). We will try to answer all questions within 24 hours.            
+            </p>
+            <p class="goTop"><a href="#about">Top</a></p>
+            <!--/support-->            
+            
+            
+            
+            
+            
+        </div>
+        <!--/content-->
+        
+        <div class="clear-fx"></div>
+        
+    </div>
+    <!--/content wrapper-->
+</body>
+</html>
