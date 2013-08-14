@@ -1,4 +1,4 @@
-
+face
 /* content wraper
 ================================================== */
 #contentWrapper{
@@ -15,7 +15,7 @@
 	z-index: 1;
 }
 
-/* background container
+/* background container		
 ================================================== */
 #backgroundContainer{
 	width: 100%;
@@ -38,7 +38,7 @@
 }
 
 
-/* MAIN MENU
+/* MAIN MENU = slide|menu
 ================================================== */
 #mainMenu{
 	position: fixed;
@@ -66,9 +66,10 @@
 	margin: 0px 0px;	
 }
 #menuItems ul li a{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 15px;
+	font-family: 'Crushed', cursive;
+	/*text-transform:uppercase;*/
+	font-weight: 400;
+	font-size: 1.7 em;
 	color: #FFFFFF;
 	margin-left: 20px;
 	margin-right: 40px;
@@ -77,7 +78,7 @@
 	outline: none;
 }
 .activeMenuLink{
-	background-color: #ec1c4d;
+	background-color: #78c9bb;
 }
 
 #menuOpenCloseBTN{
@@ -101,8 +102,8 @@
 .pagesBackground{
 	width: 960px;
 	height: 100%;
-	opacity:0.55;
-	filter:alpha(opacity=55); /* For IE8 and earlier */	
+	opacity:0.40;
+	filter:alpha(opacity=40); /* For IE8 and earlier */	
 	position: fixed;
 	left: 0px;
 	top:0px;	
@@ -189,7 +190,7 @@
 	background-color: #000000;
 }
 .backgroundColor02{
-	background-color: #ec1c4d;
+	background-color: #78c9bb;
 }
 .backgroundColor03{
 	background-color: #FFFFFF;
@@ -201,11 +202,18 @@
 .textColor01{
 	color: #FFFFFF;
 }
+
+.textColor01_{
+	color: #FFFFFF;
+	opacity:0.8;
+	filter:alpha(opacity=80); 
+}
+	
 .textColor02{
-	color: #e8e8e8;
+	color: #FFFFFF;
 }
 .textColor03{
-	color: #ec1c4d;
+	color: #78c9bb;
 }
 .textColor04{
 	color: #1a1a1a;
@@ -218,8 +226,8 @@
 .genericBackground{
 	width: 100%;
 	height: 100%;
-	opacity:0.55;
-	filter:alpha(opacity=55); /* For IE8 and earlier */	
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */	
 	position: absolute;
 	left: 0px;
 	top:0px;		
@@ -244,7 +252,7 @@
 	height: 30px;
 	float: left;
 	font-size: 1.43em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Crushed', cursive;
 	color: #FFFFFF;
 	padding-left: 4px;
 	padding-top: 5px;
@@ -271,27 +279,27 @@ body{
 }
 
 .genericButton{
-	background-color: #ec1c4d;
+	background-color: #78c9bb;
 	line-height: 25px;
 	padding: 2px 20px;
 	text-decoration: none;
 	border: none;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Crushed', cursive;
 	font-weight: 300;
-	font-size: 1.31em;
+	font-size: 1.30em;
 	color: #FFFFFF;
 	font-weight: 300;
 	outline: none;
 	cursor: pointer;		
 }
 .genericButton:visited{
-	background-color: #e20b3d;
+	background-color: #78c9bb;
 	color: #FFFFFF;
 	outline: none;
 	text-decoration: none;
 }
 .genericButton:hover{
-	background-color: #e20b3d;
+	background-color: #3ec39c;
 	color: #FFFFFF;
 	outline: none;
 	text-decoration: none;
@@ -333,10 +341,10 @@ body{
 	width: 100%;
 	height: 450px;
 }
-.mapContainer{
+/*.mapContainer{
 	width: 100%;
 	margin: 20px 0;
-}
+}*/
 .addressContainer{
 	width: 100%;
 	margin: 20px 0;	
@@ -385,22 +393,22 @@ a.phoneBig{
 .control-group.error > label,
 .control-group.error .help-block,
 .control-group.error .help-inline {
-  color: #b94a48;
+  color: #3ec39c;
 }
 .control-group.error .checkbox,
 .control-group.error .radio,
 .control-group.error input,
 .control-group.error select,
 .control-group.error textarea {
-  color: #b94a48;
-  border-color: #b94a48;
+  color: #3ec39c;
+  border-color: #3ec39c;
 }
 .control-group.error .checkbox:focus,
 .control-group.error .radio:focus,
 .control-group.error input:focus,
 .control-group.error select:focus,
 .control-group.error textarea:focus {
-  border-color: #953b39;
+  border-color: #3ec39c;
   -webkit-box-shadow: 0 0 6px #d59392;
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
@@ -408,8 +416,8 @@ a.phoneBig{
 .control-group.error .input-prepend .add-on,
 .control-group.error .input-append .add-on {
   color: #b94a48;
-  background-color: #f2dede;
-  border-color: #b94a48;
+  background-color: #3ec39c;
+  border-color: #3ec39c;
 }
 /*end contact form*/
 
@@ -420,19 +428,22 @@ a.phoneBig{
 /* TYPOGRAPHY
 ================================================== */
 h2{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Crushed', cursive;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 1.5em;
 	float: left;
-	margin-left: 8px;
+	margin-left: 10px;
 	margin-top: 3px;	
+	text-transform:uppercase;
 }
 h2 span{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Crushed', cursive;
+	text-transform:uppercase;
 	font-weight: 300;
 }
 h3{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Crushed', cursive;
+	text-transform:uppercase;
 	font-size: 1.37em;
 	font-weight: bold;
 	margin: 8px 0px;
@@ -440,27 +451,37 @@ h3{
 }
 
 .defaultText{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.81em;
+	font-family: 'Lekton', sans-serif;
+	font-size: 0.85em;
 	font-weight: 300;
-	line-height: 19px;
+	line-height: 18px;
 }
 .quoteText{
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.87em;
+	font-family: 'Crushed', cursive;
+	text-transform:uppercase;
+	font-size: 1.8em;
 	font-weight: bold;
 }
+.quoteText_{
+	font-family: 'Lekton', sans-serif;
+	text-transform:uppercase;
+	text-align:right;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-style: italic;
+	
+}
 .quoteAuthor{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.87em;
+	font-family: 'Lekton', sans-serif;
+	font-size: 1 em;
 	font-style: italic;
 	font-weight: 300;
 	margin-top: 4px;
 }
 
 
-a, a:visited { text-decoration: none; outline: none; font-family: 'Open Sans', sans-serif; color: #8fd6ff;}
-a:hover, a:focus { color: #8fd6ff; }
+a, a:visited { text-decoration: none; outline: none; font-family: 'Open Sans', sans-serif; color: #78c9bb;}
+a:hover, a:focus { color: #3ec39c; }
 p a, p a:visited { line-height: inherit; }
 /* END TYPOGRAPHY
 ================================================== */

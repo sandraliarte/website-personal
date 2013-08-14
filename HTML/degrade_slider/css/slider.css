@@ -528,7 +528,7 @@
 	background: #434141;
 	background: -webkit-gradient(linear, left top, left bottom, from(#595655), to(#434141));
 	background: -moz-linear-gradient(top,  #595655,  #434141);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#595655', endColorstr='#434141');
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#595655', endColorstr='red');
 }
 
 .blue {
