@@ -219,6 +219,10 @@ face
 	color: #1a1a1a;
 }
 
+.textColor04_{ /* gris oscurete */
+	color: #44504e;
+}
+
 .genericSection{
 	width: 100%;
 	padding: 40px 0px;
